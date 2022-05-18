@@ -9,6 +9,7 @@ import Login from './screens/login';
 import { Provider } from 'react-redux';
 import { Store } from './redux/store';
 import Map from './screens/Map';
+import Camera from './screens/Camera'
 
 import {
   StyleSheet,
@@ -75,6 +76,13 @@ function App() {
             component={Map}
 
           />
+
+<Stack.Screen
+            name='Camera'
+            component={Camera}
+
+          />
+
 
         </Stack.Navigator>
 

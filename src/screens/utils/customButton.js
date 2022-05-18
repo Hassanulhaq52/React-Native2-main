@@ -6,6 +6,7 @@ import {
     Pressable,
     StyleSheet,
     Text,
+    View
 
   
   } from 'react-native';
@@ -13,6 +14,7 @@ import {
 const MashButton = (props) => {
 
     return(
+<View style= {styles.body}>
 
         <Pressable
 
@@ -34,7 +36,7 @@ const MashButton = (props) => {
 
       </Pressable>
 
-
+      </View>
     )
 
 }
@@ -56,13 +58,18 @@ const styles = StyleSheet.create({
       button: {
 
         height: 50,
-        width: 150,
+        width: 180,
         alignItems: 'center',
         justifyContent: 'center'
-    
-    
+
       }, 
 
+
+      body:{
+
+paddingBottom: 10
+
+      }
 })
 
 export default MashButton;

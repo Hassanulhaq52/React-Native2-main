@@ -24,6 +24,7 @@ import { color } from 'react-native-reanimated';
 
 
 
+
 const db = SQLite.openDatabase(
 
   {
@@ -240,6 +241,16 @@ PushNotification.localNotificationSchedule({
 
       </Text>
 
+<CustomButton 
+
+style= {styles.cb}
+title = 'Open Camera'
+color = '#0080ff'
+onPressFunction = {() => {navigation.navigate('Camera') }}
+
+/>
+
+
 <FlatList 
 
 data = {cities}
@@ -411,6 +422,6 @@ subtitle: {
   margin: 10,
   color: '#999999',
   fontFamily: 'SquarePeg-Regular',
-}
+},
 
 })    
