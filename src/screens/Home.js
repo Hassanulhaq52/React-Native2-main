@@ -236,7 +236,7 @@ PushNotification.localNotificationSchedule({
         styles.text1
       }
       >
-        Welcome {name}!
+        Welcome {name}
 
       </Text>
 
@@ -248,7 +248,16 @@ renderItem = {({ item, index }) => (
 
 <TouchableOpacity
 
-onPress = {() => { handleNotification(item, index) }}
+onPress = {() => { 
+
+  handleNotification(item, index);
+navigation.navigate('Map',{
+  city: item.city,
+  lat: item.lat,
+  lng: item.lng
+});
+
+}}
 
 >
 <View style= {styles.item}> 

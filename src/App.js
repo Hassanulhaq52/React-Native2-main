@@ -8,6 +8,7 @@ import Home from './screens/Home';
 import Login from './screens/login';
 import { Provider } from 'react-redux';
 import { Store } from './redux/store';
+import Map from './screens/Map';
 
 import {
   StyleSheet,
@@ -66,6 +67,12 @@ function App() {
           <Stack.Screen
             name='Home'
             component={Home}
+
+          />
+
+<Stack.Screen
+            name='Map'
+            component={Map}
 
           />
 
