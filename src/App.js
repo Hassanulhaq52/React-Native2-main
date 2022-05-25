@@ -146,7 +146,11 @@ function App() {
 
           />
 
+<RootStack.Screen
+            name='Camera'
+            component={Camera}
 
+          />
 
 
         </RootStack.Navigator>
